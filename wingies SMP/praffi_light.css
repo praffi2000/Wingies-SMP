@@ -40,24 +40,15 @@ img {
 
 .roundbox{
 	width: 1300px;  
-	background-color:rgba(0,0,0,0.60); 
-	margin: auto; 
+	background-color:rgba(0,0,0,0.35);
+    -webkit-backdrop-filter:blur(30px) saturate(125%);
+    backdrop-filter:blur(30px) saturate(125%);
+    margin: auto; 
 	border-radius: 10px; 
 	padding: 20px
 }
 
-    .roundboxbouncing{
-	width: 1300px;  
-	background-color:rgba(0,0,0,0.60);
-	margin: auto; 
-	border-radius: 10px; 
-	padding: 20px;
-    animation: opacityPulse 1.5s ease-out;
- 
-    
-    }
-
-
+   
 
     @-webkit-keyframes opacityPulsing {
     0% {opacity: 100%;}
