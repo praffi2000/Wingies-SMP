@@ -11,6 +11,11 @@ p1{
 	color: aliceblue; 
 	}
 
+p5{text-align: center;
+	font-family: Minecraftia;
+	font-size: 10pt;
+	color: aliceblue}
+
 img {
 	max-width:100%;
 	height:auto;
@@ -48,6 +53,16 @@ img {
 	padding: 20px
 }
 
+.roundboxbtn{
+	width: auto; 
+    height: auto;
+    float: left;
+	text-align: center;
+   border-right: solid 1px aliceblue;
+    margin: auto; 
+	padding-right: 25px;
+	margin-right: 20px
+}
    
 
     @-webkit-keyframes opacityPulsing {
