@@ -7,21 +7,32 @@
 @font-face {font-family: BF;src: url(Buffon-Thin.otf);}
 @font-face {font-family: TFC;src: url(TofinoProPersonalNarrow-Regular.woff2);} 
 @font-face {font-family: TFW;src: url(TofinoProPersonalWide-Regular.woff2);} 
- 
-            .arear{width: 520px; ;height: 320px;position:absolute;  background-color:;left:-5px; border-radius: 10%}
-            .arear:hover ~ .fillcircle{border:5px solid #ff0613; background-color: rgba( 7, 7, 7, 0 );width: 300px;height: 300px; left:280px;border-radius:100%;transition-delay:  0s; }
-            .arear:hover ~ .strokecircle{background-color:cornflowerblue;left:-60px;  border: 0px;position: absolute;width: 310px;height: 310px;border-radius:100%;transition-delay:  0s;}
+@font-face {font-family: KB;src: url(blou.woff2);} 
+
+html {
+  scroll-behavior: smooth;
+}
+#section1{width: 500px; margin-left: 100px}
+#section2{background-color:#121212; width: 100%; height: 600px;padding-top: 50px}
+            .arear{width: 1000px; ;height: 320px;position:absolute;left:-195px; border-radius: 10%}
+            .arear:hover ~ .fillcircle{border:5px solid #ff0613; background-color: rgba( 7, 7, 7, 0 );width: 20px;height: 20px; left:940px;border-radius:100%;transition-delay:  0s; top:510px}
+.arear:hover{cursor: crosshair}
+            .arear:hover ~ .strokecircle{background-color:black;left:-260px;  border: 0px;position: absolute;width: 310px;height: 310px;border-radius: 50px 0px 50px 0px;transition-delay:  0s;}
             .arear:hover ~ .clo {opacity: 100%;transition-delay:  0s} 
             .arear:hover ~ .ele {opacity: 100%;transition-delay:  0s} 
             .arear:hover ~ .eleb{opacity: 0;transition-delay:  0s}
             .arear:hover ~ .clob{opacity: 0;transition-delay:  0s}
-            .fillcircle{width: 310px; height: 310px; border-radius:0%; background-color:#9b9b9b; position: absolute; transition: .7s; left:85px;pointer-events: none;margin-top:-314px; z-index:-6;transition-delay:  1s;border:0px solid #ff0613}
-            .strokecircle{left:85px; width: 300px; height:300px;  border-radius:0%; transition: .7s; border:5px solid #ff0613; position:absolute; pointer-events:none; margin-top:-314px; z-index:-7;transition-delay:  1s;}
+            .fillcircle{width: 300px; height: 300px; border-radius:0%; ;position: absolute; transition: .7s; left:85px;pointer-events: none;margin-top:-314px; z-index:-7;transition-delay:  1s;border:5px solid #ff0613;top:320px}
+            .strokecircle{left:85px; width: 300px; height:300px;  border-radius:0%; transition: .7s; border:5px solid black; position:absolute; pointer-events:none; margin-top:-314px; z-index:-7;transition-delay:  1s; background-color: black}
             .ele{left:120px; margin-top:-297px; color:aliceblue; font-family:BF; text-align: center; font-size:80px; opacity:0; color:antiquewhite; position: absolute;pointer-events:none; z-index:-5; transition:.5s;;transition-delay:  1s;}
-            .clo{left:0px; margin-top:-250px; color:aliceblue; font-family: FB; text-align: center; font-size:166px; opacity:0; color:#ff0613; position: absolute;pointer-events:none; z-index:-5; transition:.5s;;transition-delay:  1s;}
+            .clo{left:-200px; margin-top:-240px; color:aliceblue; font-family: KB; text-align: center; font-size:140px; opacity:0; background: rgb(119,217,32);
+background: linear-gradient(68deg, rgba(119,217,32,1) 0%, rgba(255,0,22,1) 100%);-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; position: absolute;pointer-events:none; z-index:-5; transition:.5s;;transition-delay:  1s;}
             .hid{left:-20px; pointer-events:none; width:550px; height: 320px;}
-            .eleb{left:120px; margin-top:-297px; text-align:center; font-family:BF; text-align:center; font-size:80px; color:antiquewhite; position: absolute; pointer-events:none; transition:.5s;;transition-delay:  1s;}
-            .clob{left:0px; margin-top:-250px; text-align:center; font-family: FB; text-align:center; font-size:166px; color:#ff0613; position: absolute; pointer-events:none; transition:.5s;;transition-delay:  1s;}
+            .eleb{left:120px; margin-top:-320px; text-align:center; font-family:BF; text-align:center; font-size:80px; color:antiquewhite; position: absolute; pointer-events:none; transition:.5s;;transition-delay:  1s;}
+            .clob{left:-200px; margin-top:-240px; text-align:center; font-family: KB; text-align:center; font-size:140px; background: rgb(119,217,32);
+background: linear-gradient(68deg, rgba(119,217,32,1) 0%, rgba(255,0,22,1) 100%);-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; position: absolute; pointer-events:none; transition:.5s;;transition-delay:  1s;}
             .contcenter{position: absolute;-webkit-transform: translateX(-50%) ;-moz-transform: translateX(-50%) ;transform: translateX(-50%) ;left:50%;width: 510px;margin-top:-90px}
 
 .parent{width:100%; height: 600px; overflow: hidden}
