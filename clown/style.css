@@ -1,0 +1,90 @@
+
+
+@font-face {font-family: FGB;src: url(FOUNDRYGRIDNIK-EXTRABOLDITALIC.OTF);}
+@font-face {font-family: FB;src: url(Faction-Black.woff2);}
+@font-face {font-family: FO;src: url(Faction-Outline.woff2);}
+@font-face {font-family: MO;src: url(Molle-Italic.ttf);} 
+@font-face {font-family: BF;src: url(Buffon-Thin.otf);}
+@font-face {font-family: TFC;src: url(TofinoProPersonalNarrow-Regular.woff2);} 
+@font-face {font-family: TFW;src: url(TofinoProPersonalWide-Regular.woff2);} 
+ 
+            .arear{width: 520px; ;height: 320px;position:absolute;  background-color:;left:-5px; border-radius: 10%}
+            .arear:hover ~ .fillcircle{border:5px solid #ff0613; background-color: rgba( 7, 7, 7, 0 );width: 300px;height: 300px; left:280px;border-radius:100%;transition-delay:  0s; }
+            .arear:hover ~ .strokecircle{background-color:cornflowerblue;left:-60px;  border: 0px;position: absolute;width: 310px;height: 310px;border-radius:100%;transition-delay:  0s;}
+            .arear:hover ~ .clo {opacity: 100%;transition-delay:  0s} 
+            .arear:hover ~ .ele {opacity: 100%;transition-delay:  0s} 
+            .arear:hover ~ .eleb{opacity: 0;transition-delay:  0s}
+            .arear:hover ~ .clob{opacity: 0;transition-delay:  0s}
+            .fillcircle{width: 310px; height: 310px; border-radius:0%; background-color:#9b9b9b; position: absolute; transition: .7s; left:85px;pointer-events: none;margin-top:-314px; z-index:-6;transition-delay:  1s;border:0px solid #ff0613}
+            .strokecircle{left:85px; width: 300px; height:300px;  border-radius:0%; transition: .7s; border:5px solid #ff0613; position:absolute; pointer-events:none; margin-top:-314px; z-index:-7;transition-delay:  1s;}
+            .ele{left:120px; margin-top:-297px; color:aliceblue; font-family:BF; text-align: center; font-size:80px; opacity:0; color:antiquewhite; position: absolute;pointer-events:none; z-index:-5; transition:.5s;;transition-delay:  1s;}
+            .clo{left:0px; margin-top:-250px; color:aliceblue; font-family: FB; text-align: center; font-size:166px; opacity:0; color:#ff0613; position: absolute;pointer-events:none; z-index:-5; transition:.5s;;transition-delay:  1s;}
+            .hid{left:-20px; pointer-events:none; width:550px; height: 320px;}
+            .eleb{left:120px; margin-top:-297px; text-align:center; font-family:BF; text-align:center; font-size:80px; color:antiquewhite; position: absolute; pointer-events:none; transition:.5s;;transition-delay:  1s;}
+            .clob{left:0px; margin-top:-250px; text-align:center; font-family: FB; text-align:center; font-size:166px; color:#ff0613; position: absolute; pointer-events:none; transition:.5s;;transition-delay:  1s;}
+            .contcenter{position: absolute;-webkit-transform: translateX(-50%) ;-moz-transform: translateX(-50%) ;transform: translateX(-50%) ;left:50%;width: 510px;margin-top:-90px}
+
+.parent{width:100%; height: 600px; overflow: hidden}
+.ss1{background-color:#474747; width: 100%; height: 100%; overflow: hidden;opacity: 100%; transition: .7s}
+
+.ss1:hover  { opacity: 10%; transform: scale(1.2)}
+
+.dd{height: 50px;width: 500px; margin: auto;text-align: center; font-family: FGB; color: white; font-size: 50px; transition: .3s}
+.dummy{height: 50px;width: 500px; margin: auto;text-align: center; font-family: FGB; color: white; font-size: 50px; transition: .3s; margin-top: -50px; opacity: 0; pointer-events: none; letter-spacing: -30px}
+.dd:hover{opacity: 0; letter-spacing: 50px;cursor:default}
+.dd:hover ~ .dummy{opacity: 100; letter-spacing: normal}
+
+p1{font-family: TFW; color:#9e9e9e; font-size: 20px}        p2{font-family: TFW; color:#686868; font-size: 20px}
+    .f1{; font-family: FB; font-size: 160px; text-align: center;color:white; line-height: 85%;text-shadow:0px 0px 100px rgba( 255, 255, 255, 0.602), 0px 0px 15px rgba( 255, 255, 255, 0.602 ); animation: flic 1.8s ;animation-iteration-count: 1}
+    @keyframes flic {
+  0% {
+    opacity:0.1;
+   
+  }
+  2% {
+      opacity:1;
+        }
+  8% {
+    opacity:0.1;
+   
+  }
+  9% {
+    opacity:1;
+  }
+  12% {
+    opacity:0.1;
+  }
+  20% {
+    opacity:1;
+  }
+  25% {
+    opacity:0.3;
+  }
+  30% {
+    opacity:1;
+  }
+  70% {
+    opacity:0.7;
+  }
+  72% {
+    opacity:0.2;
+  }
+  77% {
+    opacity:.9;
+  }
+  100% {
+    opacity:.9;
+  }
+}
+    .gg{; font-family: FB; font-size: 160px; opacity: 0; text-align: center;color:white; margin-top: -165px;text-shadow:0px 0px 100px rgba( 255, 255, 255, 0.602), 0px 0px 15px rgba( 255, 255, 255, 0.602 ); animation: flic .5s linear ;animation-delay: .5s; animation-iteration-count:3; animation-fill-mode:forwards}
+    
+    .hh{; font-family: FB; font-size: 160px;opacity: 0; text-align: center;color:white; margin-top: -165px;text-shadow:0px 0px 100px rgba( 255, 255, 255, 0.602), 0px 0px 15px rgba( 255, 255, 255, 0.602 ); animation: flic 2s;animation-delay: 1s ;animation-iteration-count:1;animation-fill-mode:forwards}
+  
+    
+    .hh:hover{font-family: FO; cursor: crosshair}
+    .hh:active{font-family: FO;color:yellow}
+    .gg:hover{font-family: FO;cursor: crosshair}
+    .gg:active{font-family: FO;color: aqua}
+    .f1:hover{font-family: FO;cursor: crosshair}
+    .f1:active{font-family: FO;color:chartreuse}
+    
