@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="jquery.js"></script>
+
 <style>
 @font-face {font-family: FB;src: url(Faction-Black.woff2);}
 @font-face {font-family: FO;src: url(Faction-Outline.woff2);}
@@ -8,7 +10,7 @@
 @font-face {font-family: BF;src: url(Buffon-Thin.otf);}
 @font-face {font-family: TFC;src: url(TofinoProPersonalNarrow-Regular.woff2);} 
 @font-face {font-family: TFW;src: url(TofinoProPersonalWide-Regular.woff2);} 
-          
+ 
             .arear{width: 520px; ;height: 320px;position:absolute;  background-color:;left:-5px; border-radius: 10%}
             .arear:hover ~ .fillcircle{border:5px solid #ff0613; background-color: rgba( 7, 7, 7, 0 );width: 300px;height: 300px; left:280px;border-radius:100%;transition-delay:  0s; }
             .arear:hover ~ .strokecircle{background-color:cornflowerblue;left:-60px;  border: 0px;position: absolute;width: 310px;height: 310px;border-radius:100%;transition-delay:  0s;}
@@ -66,94 +68,16 @@
     opacity:.9;
   }
 }
-    .gg{; font-family: FB; font-size: 160px; opacity: 0; text-align: center;color:white; margin-top: -165px;text-shadow:0px 0px 100px rgba( 255, 255, 255, 0.602), 0px 0px 15px rgba( 255, 255, 255, 0.602 ); animation: flics .5s linear ;animation-delay: .5s; animation-iteration-count:3; animation-fill-mode:forwards}
-    @keyframes flics {
-  0% {
-    opacity:100%;
-   
-  }
-  2% {
-      opacity:1;
-        }
-  8% {
-    opacity:0.1;
-   
-  }
-  9% {
-    opacity:1;
-  }
-  12% {
-    opacity:0.1;
-  }
-  20% {
-    opacity:1;
-  }
-  25% {
-    opacity:0.3;
-  }
-  30% {
-    opacity:1;
-  }
-  70% {
-    opacity:0.7;
-  }
-  72% {
-    opacity:0.2;
-  }
-  77% {
-    opacity:.9;
-  }
-  100% {
-    opacity:100%;
-  }
-}
+    .gg{; font-family: FB; font-size: 160px; opacity: 0; text-align: center;color:white; margin-top: -165px;text-shadow:0px 0px 100px rgba( 255, 255, 255, 0.602), 0px 0px 15px rgba( 255, 255, 255, 0.602 ); animation: flic .5s linear ;animation-delay: .5s; animation-iteration-count:3; animation-fill-mode:forwards}
+    
     .hh{; font-family: FB; font-size: 160px;opacity: 0; text-align: center;color:white; margin-top: -165px;text-shadow:0px 0px 100px rgba( 255, 255, 255, 0.602), 0px 0px 15px rgba( 255, 255, 255, 0.602 ); animation: flic 2s;animation-delay: 1s ;animation-iteration-count:1;animation-fill-mode:forwards}
-    @keyframes flic {
-  0% {
-    opacity:0.1;
-   
-  }
-  2% {
-      opacity:1;
-        }
-  8% {
-    opacity:0.1;
-   
-  }
-  9% {
-    opacity:1;
-  }
-  12% {
-    opacity:0.1;
-  }
-  20% {
-    opacity:1;
-  }
-  25% {
-    opacity:0.3;
-  }
-  30% {
-    opacity:1;
-  }
-  70% {
-    opacity:0.7;
-  }
-  72% {
-    opacity:0.2;
-  }
-  77% {
-    opacity:.9;
-  }
-  100% {
-    opacity:.9;
-  }
-}
+  
     
     .hh:hover{font-family: FO; cursor: crosshair}
     .hh:active{font-family: FO;color:yellow}
-     .gg:hover{font-family: FO;cursor: crosshair}
+    .gg:hover{font-family: FO;cursor: crosshair}
     .gg:active{font-family: FO;color: aqua}
-     .f1:hover{font-family: FO;cursor: crosshair}
+    .f1:hover{font-family: FO;cursor: crosshair}
     .f1:active{font-family: FO;color:chartreuse}
     
     
@@ -161,15 +85,16 @@
 <meta charset="UTF-8">
 <title> Interactive Posters </title>
 </head>
+	
     
 <body style="background-color: black">
    
        <div style="height: 35px;"></div>
-    <div style="height: 100px; background-image: url(capture.jpg);filter: invert(100%); background-size: contain; background-repeat: no-repeat;width: 300px; margin: auto"></div>
+    <div style="height: 100px; background-image: url('Capture.JPG');filter: invert(100%); background-size: contain; background-repeat: no-repeat;width: 300px; margin: auto"></div>
      <div style="height: 100px;"></div>
-                            <div class=f1 >TARUN</div> 
-    <div class=gg style="margin-top: -22px">LALLU</div>  
-    <div class=hh style="margin-top: -50px">LOLI</div> <div style="height: 100px;"></div>
+                            <div class=f1 id=changetext>HOVER</div> 
+    <div class=gg style="margin-top: -22px">INTERACTIVE</div>  
+    <div class=hh style="margin-top: -50px">POSTERS</div> <div style="height: 100px;"></div>
     
     <div style="background-color:#070707; width: 100%; height: 600px;padding-top: 50px">
         
@@ -178,24 +103,27 @@
             <p style="font-family: TFW; color:#ff0613; font-size: 20px">■</p>
             <p style="font-family: TFW; color:aliceblue; font-size: 20px">■</p>
      
-        
-        
-        
-        
-        
         </div>
         
     <container class=contcenter>
         <div class=arear> </div>
         <div class=hid> </div>
-        <div class=clo > CIRCUS</div>
-        <div class=ele > expect a</div>
-        <div class=clob> CLOWN</div>
-        <div class=eleb> elect a</div>
+        <div class=clo > A</div>
+        <div class=ele > a</div>
+        <div class=clob> B</div>
+        <div class=eleb> b</div>
         <div class=strokecircle></div>
         <div class="fillcircle" ></div>       
     </container> </div>  
     
     <div style="height: 300px"></div>
+	
+	<script>
+	function changetext(){document.getElementById("changetext").innerHTML="CLICK";}
+	$( "#changetext" ).mouseover(changetext);
+		function changetext1(){document.getElementById("changetext").innerHTML="HOVER";}
+	$( "#changetext" ).mouseout(changetext1);
+		
+	</script>
 </body>
 </html>
