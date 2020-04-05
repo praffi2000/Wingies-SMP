@@ -33,7 +33,7 @@ background: linear-gradient(68deg, rgba(119,217,32,1) 0%, rgba(255,0,22,1) 100%)
             .clob{left:-200px; margin-top:-240px; text-align:center; font-family: KB; text-align:center; font-size:140px; background: rgb(119,217,32);
 background: linear-gradient(68deg, rgba(119,217,32,1) 0%, rgba(255,0,22,1) 100%);-webkit-background-clip: text;
   -webkit-text-fill-color: transparent; position: absolute; pointer-events:none; transition:.5s;;transition-delay:  1s;}
-            .contcenter{position: absolute;-webkit-transform: translateX(-50%) ;-moz-transform: translateX(-50%) ;transform: translateX(-50%) ;left:50%;width: 510px;margin-top:-90px}
+            .contcenter{position: absolute;-webkit-transform: translateX(-40%) ;-moz-transform: translateX(-40%) ;transform: translateX(-40%) ;left:40%;width: 510px;margin-top:-90px}
 
 .parent{width:100%; height: 600px; overflow: hidden}
 .ss1{background-color:#474747; width: 100%; height: 100%; overflow: hidden;opacity: 100%; transition: .7s}
@@ -99,9 +99,13 @@ p1{font-family: TFW; color:#9e9e9e; font-size: 20px}        p2{font-family: TFW;
     .f1:hover{font-family: FO;cursor: crosshair;}
     .f1:active{font-family: FO;color:chartreuse;text-shadow:0px 0px 100px chartreuse, 0px 0px 25px yellow; animation: flic 1.8s ;animation-iteration-count: infinite}
 
-.cb1{height: 50%; padding: 50px;background-color:#0a0a0a;width: 40%; float: right;margin-left: 10px;margin-right: 10px; margin-top: 50px;margin-bottom: -30px}
-.cb2{height: 50%; padding: 50px;background-color:#0a0a0a;width: 40%; float: right;margin-left: 10px;margin-right: 10px; margin-top: 50px;margin-bottom: -30px}
-.cb3{height: 50%; padding: 50px;background-color:#0a0a0a;width: 40%; float: right;margin-left: 10px;margin-right: 10px; margin-top: 50px;margin-bottom: -30px}
-.cb4{height: 50%; padding: 50px;background-color:#0a0a0a;width: 40%; float: right;margin-left: 10px;margin-right: 10px; margin-top: 50px;margin-bottom: -30px}
-.cb1:hover{cursor: url("https://cdn0.iconfinder.com/data/icons/Toolbar_Icon_Set_by_shlyapnikova/32/soccer.png"),auto}    .cb3:hover{cursor:  url("https://lh3.googleusercontent.com/proxy/aZqxeGRqhcQ8EYkKRqFCV5_38LRpXfkKvPV0jK5tyOOotkFR4MXUj6RL8WwZU_Bk9CRbse3PqU16O5QoyYpky7Y_wY_HzqKn4aqt7srnxSgB7RxiZ4-qVvEWwfSC2ZY"),auto}    .cb2:hover{cursor: url("https://secure.webtoolhub.com/static/resources/icons/set147/def2a313.png"),auto}    .cb4:hover{cursor: url("https://globalsolarsupply.com/wp-content/uploads/2018/09/visa.png"),auto}
-    
+.cb1{height: 50%; padding: 50px;background-color:#0a0a0a;width: 30%; float: right;margin-left: 10px;margin-right: 10px; margin-top: 50px;}
+.cb2{height: 50%; padding: 50px;background-color:#0a0a0a;width: 30%; float: right;margin-left: 10px;margin-right: 10px; margin-top: 50px;}
+.cb3{height: 50%; padding: 50px;background-color:#0a0a0a;width: 30%; float: right;margin-left: 10px;margin-right: 10px; margin-top: 20px;}
+.cb4{height: 50%; padding: 50px;background-color:#0a0a0a;width: 30%; float: right;margin-left: 10px;margin-right: 10px; margin-top: 20px;}
+.cb1:hover{cursor: url("https://cdn0.iconfinder.com/data/icons/Toolbar_Icon_Set_by_shlyapnikova/32/soccer.png"),auto}    .cb3:hover{cursor:  url(simp.png),auto}    .cb2:hover{cursor: url("https://secure.webtoolhub.com/static/resources/icons/set147/def2a313.png"),auto}    .cb4:hover{cursor: url("https://globalsolarsupply.com/wp-content/uploads/2018/09/visa.png"),auto}
+
+
+.glowbox{width: 8%; height: 45px; background-color: black;text-align: center;vertical-align: middle;font-family: FO; color: aliceblue; font-size: 30px; -webkit-transition: .2s;float: right;margin: 1px;padding-top:10px}
+.glowbox:hover{  -webkit-filter: drop-shadow(0px 0px 35px rgba( 255, 255, 255, 0.602)) drop-shadow(0px 0px 15px white);-webkit-transition: .2s;cursor: crosshair;font-family: FB;color: black; background-color: white; transform: scale(1.15)}
+.glowbox:focus, .glowbox:active{  -webkit-filter: drop-shadow(0px 0px 35px rgba( 255, 255, 255, 0.602)) drop-shadow(0px 0px 15px white);-webkit-transition: .2s;cursor: crosshair;font-family: FB;color: black; background-color: white; transform: scale(1.4)}
